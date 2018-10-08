@@ -1,3 +1,11 @@
+#' Converts journal to a dataframe of entries
+#'
+#' @param journal input
+#' @return dataframe giving rows corresponding to each element in input journal
+#' @seealso \code{\link{read.journal}}
+#' @export
+#' @example
+
 as.data.frame.journal <- function( journal  ){
 	df <- data.frame()
 	df <- data.frame()

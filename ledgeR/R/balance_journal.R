@@ -1,6 +1,11 @@
 library(tidyr)
 library(dplyr)
 
+#' Returns account stringth to a given depth
+#'
+#' @param string input account name
+#' @param numeric desired account depth (defaults to null, which will return the original account)
+#' @return string shortened account name
 acct.at.depth <- function(acct, depth = NULL ){
     if (!is.character(acct)){
         stop( 'acct.at.depth() expected a string, but got something else' )
